@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenIntro", "RavenIntro\RavenIntro.csproj", "{15171DF1-4973-470B-A472-CA2D204D0127}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenIntro.Tests", "RavenIntro.Tests\RavenIntro.Tests.csproj", "{5CB34D62-93A9-4077-896B-2ECB6774A097}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intro", "Intro", "{D49EE74F-F18F-49C1-A763-16EC1F390ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenIntro.NerdDinner", "RavenIntro.NerdDinner\RavenIntro.NerdDinner.csproj", "{FFD14054-EA42-4823-BA8A-F18E39E04919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +25,16 @@ Global
 		{5CB34D62-93A9-4077-896B-2ECB6774A097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB34D62-93A9-4077-896B-2ECB6774A097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB34D62-93A9-4077-896B-2ECB6774A097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD14054-EA42-4823-BA8A-F18E39E04919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD14054-EA42-4823-BA8A-F18E39E04919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD14054-EA42-4823-BA8A-F18E39E04919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD14054-EA42-4823-BA8A-F18E39E04919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15171DF1-4973-470B-A472-CA2D204D0127} = {D49EE74F-F18F-49C1-A763-16EC1F390ED2}
+		{5CB34D62-93A9-4077-896B-2ECB6774A097} = {D49EE74F-F18F-49C1-A763-16EC1F390ED2}
 	EndGlobalSection
 EndGlobal
