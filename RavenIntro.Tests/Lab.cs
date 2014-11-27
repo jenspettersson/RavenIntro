@@ -9,8 +9,21 @@ namespace RavenIntro.Tests
     [TestFixture]
     public class Lab : FakeApplication
     {
+        public Lab() : base(buildIndexes: false){}
+
+
         [Test]
-        public void GetByCompany()
+        public void BasicQuery()
+        {
+            using (var session = NewSession())
+            {
+               
+            }
+        }
+
+
+        [Test]
+        public void CompaniesSearch()
         {
             using (var session = NewSession())
             {
@@ -19,7 +32,7 @@ namespace RavenIntro.Tests
                                    .Where(x => x.Query == "usa")
                                    .As<Company>();
 
-                var results = query.ToList();                      
+                var results = query.ToList();
             }
         }
 

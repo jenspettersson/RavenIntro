@@ -9,17 +9,20 @@ namespace RavenIntro.Tests
     {
         private readonly DocumentStore _documentStore;
 
-        public FakeApplication()
+        public FakeApplication(bool buildIndexes = true)
         {
             _documentStore = new DocumentStore
             {
                 Url = "http://localhost:8080",
-                DefaultDatabase = "RavenIntro"
+                DefaultDatabase = "IntroToRaven"
             };
 
             _documentStore.Initialize();
 
-            IndexCreation.CreateIndexes(typeof(OrdersByCompany).Assembly, _documentStore);
+            if(buildIndexes)
+            {
+                IndexCreation.CreateIndexes(typeof(OrdersByCompany).Assembly, _documentStore);
+            }
         }
 
         public IDocumentSession NewSession()
